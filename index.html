@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="header">
+                <p>Temperature Converter</p>
+                <span>
+                    <i class="fas fa-thermometer-half"></i>
+                </span>
+            </div>
+            <div class="line"></div>
+            <label>Celcius</label>
+            <div class="input-box">
+                <input type="number" id="celcius" placeholder="Temperature in Celcius" oninput="c_convert(this.value)" onchange="c_convert(this.value)">
+                <span>&#8451</span>
+            </div>
+            <label>Farenheit</label>
+            <div class="input-box">
+                <input type="number" id="farenheit" placeholder="Temperature in Farenheit" oninput="f_convert(this.value)" onchange="f_convert(this.value)">
+                <span>&#8457</span>
+            </div>
+            <label>Kelvin</label>
+            <div class="input-box">
+                <input type="number" id="kelvin" placeholder="Temperature in kelvin" oninput="k_convert(this.value)" onchange="k_convert(this.value)">
+                <span>&#8490</span>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
